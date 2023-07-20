@@ -1,0 +1,57 @@
+{
+    "exp_name" : "OnlySPGNN",
+    "city" : "beijing",
+    "mode" : "init",
+    "eval" : "no",
+
+    "load_timestamp" : "20220719T1140",
+
+    "baseline" : "multi-rf",
+
+    "check_device" : 0,
+    "device" : 1,
+
+    "lng_min" : 116.1945360,
+    "lng_max" : 116.5547146,
+    "lat_min" : 39.7500397,
+    "lat_max" : 40.0259221,
+
+    "GNN_in_dim" : "from_data",
+    "GNN_hid_dim" : 128,
+    "node_embsize" : 64,
+
+    "IF_disProj" : 1,
+    "disProj_dim" : 64,
+    "disProj_layers" : 5,
+
+    "predictor_type" : "ResMLP",
+
+    "num_mlp_layers" : 5, 
+
+    "IF_locProj" : 0,
+    "num_locProj_layers" : 3,
+    "locProj_hid_dim" : 64,
+
+    "pre_hid": 64, 
+    "pre_len": 3,
+
+    "bipartite_in_dim" : 48,
+    "bipartite_hid_dim" : 32,
+    "bipartite_out_dim" : 32,
+    "head_num" : 8,
+
+    "random_seed" : 2022,
+
+    "batch_size" : 10000,
+    "lr" : 1e-4,
+    "EPOCH" : 1000000,
+    "converge_EPOCH" : 1000,
+    "overfit_EPOCH" : 1000,
+
+    "train" : 0.8,
+    "valid" : 0.1,
+    "test" : 0.1,
+
+    "exp_path" : "exp/",
+    "data_path" : "data/"
+}
